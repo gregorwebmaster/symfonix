@@ -20,3 +20,22 @@ A Docker-based development environment for Symfony applications.
 - Username: symfony
 - Password: symfony
 - Root Password: root
+
+## Commands
+```bash
+# Starting the application
+docker-compose up -d
+
+### Viewing logs
+docker-compose logs -f app
+
+### Executing Symfony commands
+docker-compose exec app symfony console make:controller
+
+# Accessing the container shell
+docker-compose exec app bash
+
+### Stopping the application
+docker-compose down
+
+```

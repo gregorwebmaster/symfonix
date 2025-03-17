@@ -1,0 +1,49 @@
+# Symfony specific
+/app/var/
+/app/vendor/
+/app/bin/.phpunit/
+/app/composer.lock
+/app/.env.local
+/app/.env.local.php
+/app/.env.*.local
+/app/config/secrets/prod/prod.decrypt.private.php
+/app/public/bundles/
+
+# Cache, session files and logs
+/app/var/cache/*
+/app/var/log/*
+/app/var/sessions/*
+!app/var/cache/.gitkeep
+!app/var/log/.gitkeep
+!app/var/sessions/.gitkeep
+
+# Parameters
+/app/config/parameters.yml
+/app/config/parameters.ini
+
+# Managed by Composer
+/app/bootstrap.php.cache
+/app/var/bootstrap.php.cache
+
+# PHPUnit
+/app/phpunit.xml
+/app/.phpunit.result.cache
+
+# Build data
+/app/build/
+
+# Composer PHAR
+/app/composer.phar
+
+# Docker
+.env
+
+# Database volume
+/db_data/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.DS_Store

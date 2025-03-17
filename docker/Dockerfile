@@ -11,9 +11,20 @@ RUN apt-get update && apt-get install -y \
     php-mbstring \
     php-mysql \
     php-curl \
+    # Additional recommended extensions
+    php-gd \
+    php-pdo \
+    php-sqlite3 \
+    php-xdebug \
+    php-amqp \
+    php-redis \
+    php-apcu \
+    php-opcache \
+    # Tools
     git \
     unzip \
-    wget
+    wget \
+    curl
 
 # Install Symfony CLI
 RUN curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | bash && \

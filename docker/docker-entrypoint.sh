@@ -11,5 +11,5 @@ if [ ! -f "composer.json" ]; then
     composer install
 fi
 
-# Start Symfony server
-symfony server:start --no-tls --port=8000 --allow-http
+# Start Symfony server with improved configuration
+symfony server:start --no-tls --port=8000 --allow-http --daemon=0

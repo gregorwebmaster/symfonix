@@ -1,0 +1,44 @@
+# Version control
+.git
+.gitignore
+
+# Docker files
+docker-compose.yml
+docker-compose.*.yml
+.dockerignore
+
+# Node modules
+node_modules
+
+# Symfony cache and logs
+app/var/cache/*
+app/var/log/*
+app/var/sessions/*
+
+# Vendor directory (will be installed in the container)
+app/vendor/
+
+# IDE files
+.idea
+.vscode
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+
+# Database volume
+db_data/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+app/build/
+
+# Testing
+app/phpunit.xml
+app/.phpunit.result.cache
+
+# Composer
+app/composer.phar
